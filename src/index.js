@@ -87,8 +87,9 @@ class App extends React.Component {
     render() {
         return (
             <div data-theme="bumblebee" className="app-container ">
-                <div className="outer-container artboard phone-1 bg-primary-content artboard-demo ">
-                    <div className="display card bg-neutral p2">
+                <div className="outer-container artboard phone-1 bg-base-100 artboard-demo p-4">
+                    <h3 className="card-title text-primary" >Ultra-Calculator 3000</h3>
+                    <div className="display card bg-base-200 p-4">
                         <div className="expression-display chiffres">
                             {this.state.expression}
                         </div>
@@ -112,7 +113,7 @@ class App extends React.Component {
 class Button extends React.Component {
     render() {
         return (
-            <div className="button-container card p2">
+            <div className="button-container">
                 <button className="btn btn-warning  " onClick={this.props.clearDisplay} id="clear">AC</button>
                 <button className="btn btn-secondary " onClick={this.props.handleOperators} id="add" value="+">+</button>
                 <button className="btn btn-secondary " onClick={this.props.handleOperators} id="subtract" value="-">-</button>

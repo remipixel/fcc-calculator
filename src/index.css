@@ -7,19 +7,21 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  @apply bg-base-100
+  @apply bg-neutral-content
 }
 
 .outer-container {
   position: relative;
+  @apply shadow-2xl;
 }
 
 .display {
   height: auto;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom:1rem;
   font-family: monospace;
-  color: white;
+  @apply text-warning;
+ @apply shadow-xl
 }
 
 .expression-display {
@@ -55,4 +57,8 @@
 
 .card {
     @apply p-4
+}
+
+.btn {
+  @apply shadow-lg;
 }
